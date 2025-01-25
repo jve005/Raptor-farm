@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: fcb7896e759f50540a8ca8628a10b87b
+guid: ea71b4ab14c4c4d448f563ffe7490894
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5942665237761751294
-    second: Main ui_0
+      213: -7662403102892397348
+    second: cell buy button-Sheet_0
+  - first:
+      213: 7645328061834870688
+    second: cell buy button-Sheet_1
+  - first:
+      213: 4440074249723612544
+    second: cell buy button-Sheet_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +52,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -126,13 +132,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Main ui_0
+      name: cell buy button-Sheet_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 80
-        height: 22
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,20 +147,64 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 207062ca379678da0800000000000000
-      internalID: -5942665237761751294
+      spriteID: cdc6f3e99fca9a590800000000000000
+      internalID: -7662403102892397348
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Main ui_1
+      name: cell buy button-Sheet_1
       rect:
         serializedVersion: 2
-        x: 80
+        x: 16
         y: 0
-        width: 80
-        height: 22
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0af3ef49d59a91a60800000000000000
+      internalID: 7645328061834870688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cell buy button-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08d822f61005e9d30800000000000000
+      internalID: 4440074249723612544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cell buy button-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,30 +213,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cbfcea5aad8fd0341b5c502d8fd0b4f9
-      internalID: 1331176795
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Main ui_2
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 0
-        width: 80
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: aabea06e85b223b4189f8662a1822153
-      internalID: -29919219
+      spriteID: 01acf77a198c41347bcc3e7f54058b7e
+      internalID: 1068533623
       vertices: []
       indices: 
       edges: []
@@ -195,7 +223,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 06323dbf9bb352244be833ba8f0a4725
+    spriteID: b49b126f835a57c4a93d1fde5a78d66a
     internalID: 0
     vertices: []
     indices: 
@@ -205,9 +233,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Main ui_0: -5942665237761751294
-      Main ui_1: 1331176795
-      Main ui_2: -29919219
+      cell buy button-Sheet_0: -7662403102892397348
+      cell buy button-Sheet_1: 7645328061834870688
+      cell buy button-Sheet_2: 4440074249723612544
+      cell buy button-Sheet_3: 1068533623
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
