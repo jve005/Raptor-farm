@@ -21,7 +21,6 @@ public class DBManager : MonoBehaviour
     //         
     //     }
     // }
-
     
     public void InitializePlayer()
     {

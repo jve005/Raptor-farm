@@ -6,11 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="65603124-39c0-408e-a710-6f33a4190801" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Raptor-farm/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Raptor-farm/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/DBTest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DBTest.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Jørgen UI testing.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Jørgen UI testing.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/DBManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DBManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Raptor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Raptor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/SQLite/ChickenRaptor.db" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StreamingAssets/SQLite/ChickenRaptor.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/SQLite/ChickenRaptor.sqbpro" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StreamingAssets/SQLite/ChickenRaptor.sqbpro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Raptors/dino A part 1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Raptors/dino A part 1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Raptors/dino A part 2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Raptors/dino A part 2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Raptors/dino A part 3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Raptors/dino A part 3.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +35,7 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/DisplayRaptor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Raptor.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
@@ -109,7 +111,7 @@
       <updated>1737809556602</updated>
       <workItem from="1737809558103" duration="165000" />
       <workItem from="1737813349864" duration="4349000" />
-      <workItem from="1737821660046" duration="2924000" />
+      <workItem from="1737821660046" duration="5628000" />
     </task>
     <servers />
   </component>
