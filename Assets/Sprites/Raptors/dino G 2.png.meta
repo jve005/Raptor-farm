@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: d39b5c6dcb8edb54fabb2d42e2338060
+guid: 05cbb883a8ea79b4a8d60e14b13c6f27
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8391889299363596517
-    second: dinos E 3_0
+      213: -1874817171479630492
+    second: dino G 2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: dinos E 3_0
+      name: dino G 2_0
       rect:
         serializedVersion: 2
-        x: 27
+        x: 4
         y: 0
-        width: 27
-        height: 33
+        width: 31
+        height: 39
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b17f705f4250a8b80800000000000000
-      internalID: -8391889299363596517
+      spriteID: 46d672b37bf4bf5e0800000000000000
+      internalID: -1874817171479630492
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      dinos E 3_0: -8391889299363596517
+      dino G 2_0: -1874817171479630492
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
