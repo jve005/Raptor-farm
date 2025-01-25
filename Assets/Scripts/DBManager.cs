@@ -1,15 +1,16 @@
 using System.Data;
 using Mono.Data.Sqlite;
+using Unity.Collections.LowLevel.Unsafe;
 using UnityEngine;
 
 public class DBManager : MonoBehaviour
 {
-    private static string dbName = "CR2.db";
+    private static string dbName = "ChickenRaptor.db";
     private string filepath = $"{Application.dataPath}/StreamingAssets/SQLite/{dbName}";
 
     private void Start()
     {
-        DisplayPlayerDataTest();
+        InitializePlayer();
     }
     
     //  DO THIS LATER PERCHANCE
@@ -21,21 +22,30 @@ public class DBManager : MonoBehaviour
     //     }
     // }
 
-    public void DisplayPlayerDataTest()
+    
+    public void InitializePlayer()
     {
         using (var connection = new SqliteConnection($"URI=file:{filepath}"))
         {
             connection.Open();
-
+            
             using (var command = connection.CreateCommand())
             {
-                command.CommandText = "SELECT * FROM PlayerStat";
+                command.CommandText = "DELETE FROM PlayerStat; VACUUM";
+                
+                command.ExecuteNonQuery();
+                
+                command.CommandText = "INSERT INTO PlayerStat (Money) VALUES (100)";
+                
+                command.ExecuteNonQuery();
 
+                command.CommandText = "SELECT Money FROM PlayerStat";
+                
                 using (IDataReader reader = command.ExecuteReader())
                 {
                     while (reader.Read())
                     {
-                        Debug.Log($"Money: {reader[0]}, Food: {reader[1]}");
+                        Debug.Log($"Money: {reader[0]}");
                     }
                     
                     reader.Close();
