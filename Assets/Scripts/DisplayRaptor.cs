@@ -3,12 +3,15 @@ using System.Net.Mime;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Linq;
 
 public class DisplayRaptor : MonoBehaviour
 {
-    public Raptor raptor;
-    public GameManager gameManager;
-
+    public int id;
+    
+    public ContainerManager containerManager;
+    public RaptorGeneration raptorGeneration;
+    
     public Image RaptorHead;
     public Image RaptorTorso;
     public Image RaptorTail;
@@ -18,8 +21,9 @@ public class DisplayRaptor : MonoBehaviour
 
     private void Start()
     {
-        raptor = new Raptor();
-        gameManager.GenerateRaptor(raptor);
+        raptorGeneration.CreateRaptor();
+        
+        Raptor raptor = new Raptor();
         
         RaptorHead.sprite = raptor.Head;
         RaptorTorso.sprite = raptor.Torso;

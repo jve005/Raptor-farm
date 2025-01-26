@@ -3,7 +3,10 @@ using UnityEngine;
 
 public class ContainerManager : MonoBehaviour
 {
+    public int currentlySelected;
     public bool[] isSelected;
+    
+    public GameObject[] containers;
 
     public void SelectContainer(int index)
     {
@@ -13,5 +16,6 @@ public class ContainerManager : MonoBehaviour
         }
         
         isSelected[index] = true;
+        currentlySelected = index;
     }
 }

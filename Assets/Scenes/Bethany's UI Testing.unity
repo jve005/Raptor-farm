@@ -767,7 +767,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 237140ae282c1d94abef58ed70034a9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 824884342}
+  id: 5
+  containerManager: {fileID: 1831610813}
+  raptorGeneration: {fileID: 1831610814}
   RaptorHead: {fileID: 1350479794}
   RaptorTorso: {fileID: 1429127201}
   RaptorTail: {fileID: 488484609}
@@ -2005,7 +2007,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 237140ae282c1d94abef58ed70034a9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 824884342}
+  id: 1
+  containerManager: {fileID: 1831610813}
+  raptorGeneration: {fileID: 1831610814}
   RaptorHead: {fileID: 711802235}
   RaptorTorso: {fileID: 419986174}
   RaptorTail: {fileID: 112844897}
@@ -2195,7 +2199,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 237140ae282c1d94abef58ed70034a9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 824884342}
+  id: 4
+  containerManager: {fileID: 1831610813}
+  raptorGeneration: {fileID: 1831610814}
   RaptorHead: {fileID: 164756450}
   RaptorTorso: {fileID: 727000592}
   RaptorTail: {fileID: 1118445958}
@@ -3302,6 +3308,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9b784dceb37cfd44a0d76a198e7cfd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  containerManager: {fileID: 1831610813}
   money: 0
   moneyText: {fileID: 996953213}
 --- !u!1 &875819544
@@ -3567,7 +3574,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 237140ae282c1d94abef58ed70034a9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 824884342}
+  id: 0
+  containerManager: {fileID: 1831610813}
+  raptorGeneration: {fileID: 1831610814}
   RaptorHead: {fileID: 1711645957}
   RaptorTorso: {fileID: 341549750}
   RaptorTail: {fileID: 875819546}
@@ -5279,7 +5288,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 237140ae282c1d94abef58ed70034a9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 824884342}
+  id: 3
+  containerManager: {fileID: 1831610813}
+  raptorGeneration: {fileID: 1831610814}
   RaptorHead: {fileID: 1251532093}
   RaptorTorso: {fileID: 377369911}
   RaptorTail: {fileID: 1903329009}
@@ -5503,26 +5514,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 156124111}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 824884344}
+        m_TargetAssemblyTypeName: MoneyManager, Assembly-CSharp
+        m_MethodName: SellRaptor
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 1688907536}
-        m_TargetAssemblyTypeName: UnityEngine.UI.Image, UnityEngine.UI
-        m_MethodName: set_overrideSprite
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 1068533623, guid: ea71b4ab14c4c4d448f563ffe7490894, type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 10
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
@@ -6016,6 +6015,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1831610812}
   - component: {fileID: 1831610813}
+  - component: {fileID: 1831610814}
   m_Layer: 5
   m_Name: Containers
   m_TagString: Untagged
@@ -6060,7 +6060,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d3e935cc65aae0439d3a5d11ce20e08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentlySelected: 0
   isSelected: 000000000000
+  containers:
+  - {fileID: 903685239}
+  - {fileID: 581970882}
+  - {fileID: 2060733551}
+  - {fileID: 1587268546}
+  - {fileID: 678864965}
+  - {fileID: 183998367}
+--- !u!114 &1831610814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1831610811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a49b20984eaec7d49bba5422063410c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 824884342}
 --- !u!1 &1903329007
 GameObject:
   m_ObjectHideFlags: 0
@@ -6363,7 +6384,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 237140ae282c1d94abef58ed70034a9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 824884342}
+  id: 2
+  containerManager: {fileID: 1831610813}
+  raptorGeneration: {fileID: 1831610814}
   RaptorHead: {fileID: 1732665531}
   RaptorTorso: {fileID: 6950579}
   RaptorTail: {fileID: 49511590}
