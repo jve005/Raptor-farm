@@ -8,12 +8,11 @@ public class GameManager : MonoBehaviour
     public Sprite[] torsos;
     public Sprite[] tails;
     
-    public Raptor GenerateRaptor(Raptor newRaptor)
+    public Raptor GenerateRaptor(Raptor newRaptor, int id)
     {
-        raptor = new Raptor();
-        
         var randRaptorName = RaptorNames.names[Random.Range(0, RaptorNames.names.Length)];
         newRaptor.Name = randRaptorName;
+        newRaptor.RaptorID = id;
 
         newRaptor.Cooldown = 0;
         newRaptor.Hunger = 0;

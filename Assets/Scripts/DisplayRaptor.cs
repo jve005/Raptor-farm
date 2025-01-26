@@ -4,14 +4,16 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using System.Linq;
+using Unity.VisualScripting;
 
 public class DisplayRaptor : MonoBehaviour
 {
     public int id;
     
+    public GameManager gameManager;
     public ContainerManager containerManager;
     public RaptorGeneration raptorGeneration;
-    
+
     public Image RaptorHead;
     public Image RaptorTorso;
     public Image RaptorTail;
@@ -21,15 +23,34 @@ public class DisplayRaptor : MonoBehaviour
 
     private void Start()
     {
-        raptorGeneration.CreateRaptor();
+        id = int.Parse(gameObject.name.Replace("Container", ""));
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            CreateRaptor();
+        }
+    }
+
+    public void InstansiateRaptor(Raptor raptor)
+    {
+        gameManager.GenerateRaptor(raptor, id);
+    }
+
+    public void CreateRaptor()
+    {
+        Raptor newRaptor = new Raptor();
+        InstansiateRaptor(newRaptor);
         
-        Raptor raptor = new Raptor();
         
-        RaptorHead.sprite = raptor.Head;
-        RaptorTorso.sprite = raptor.Torso;
-        RaptorTail.sprite = raptor.Tail;
         
-        RaptorName.text = raptor.Name;
-        RaptorHunger.text = raptor.Hunger.ToString();
+        RaptorHead.sprite = newRaptor.Head;
+        RaptorTorso.sprite = newRaptor.Torso;
+        RaptorTail.sprite = newRaptor.Tail;
+
+        RaptorName.text = newRaptor.Name;
+        RaptorHunger.text = newRaptor.Hunger.ToString();
     }
 }

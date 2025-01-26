@@ -18,7 +18,6 @@ public class RaptorManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             InitializeRaptor();
-            Debug.Log("Raptor initialized");
         }
     }
 

@@ -731,7 +731,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &183998368
 RectTransform:
   m_ObjectHideFlags: 0
@@ -768,6 +768,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 5
+  gameManager: {fileID: 824884342}
   containerManager: {fileID: 1831610813}
   raptorGeneration: {fileID: 1831610814}
   RaptorHead: {fileID: 1350479794}
@@ -1971,7 +1972,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &581970883
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2008,6 +2009,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 1
+  gameManager: {fileID: 824884342}
   containerManager: {fileID: 1831610813}
   raptorGeneration: {fileID: 1831610814}
   RaptorHead: {fileID: 711802235}
@@ -2163,7 +2165,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &678864966
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2200,6 +2202,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 4
+  gameManager: {fileID: 824884342}
   containerManager: {fileID: 1831610813}
   raptorGeneration: {fileID: 1831610814}
   RaptorHead: {fileID: 164756450}
@@ -3533,12 +3536,12 @@ GameObject:
   - component: {fileID: 903685240}
   - component: {fileID: 903685241}
   m_Layer: 5
-  m_Name: Container
+  m_Name: Container0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &903685240
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3575,6 +3578,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 0
+  gameManager: {fileID: 824884342}
   containerManager: {fileID: 1831610813}
   raptorGeneration: {fileID: 1831610814}
   RaptorHead: {fileID: 1711645957}
@@ -5252,7 +5256,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1587268547
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5289,6 +5293,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 3
+  gameManager: {fileID: 824884342}
   containerManager: {fileID: 1831610813}
   raptorGeneration: {fileID: 1831610814}
   RaptorHead: {fileID: 1251532093}
@@ -6081,7 +6086,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a49b20984eaec7d49bba5422063410c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 824884342}
 --- !u!1 &1903329007
 GameObject:
   m_ObjectHideFlags: 0
@@ -6348,7 +6352,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2060733552
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6385,6 +6389,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 2
+  gameManager: {fileID: 824884342}
   containerManager: {fileID: 1831610813}
   raptorGeneration: {fileID: 1831610814}
   RaptorHead: {fileID: 1732665531}
