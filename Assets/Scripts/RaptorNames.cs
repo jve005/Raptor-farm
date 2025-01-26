@@ -2,9 +2,9 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RaptorNames
+public static class RaptorNames
 {
-    List<string> names = new List<string>
+    public static string[] names =
     {
         "Chompers the Third",
         "Sancho",
@@ -37,7 +37,6 @@ public class RaptorNames
         "Tor",
         "Kajsa",
         "Money D. Bags",
-        "Bags",
         "Julius",
         "Dino",
         "Clucky",

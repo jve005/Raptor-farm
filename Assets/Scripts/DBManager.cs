@@ -12,16 +12,6 @@ public class DBManager : MonoBehaviour
     {
         InitializePlayer();
     }
-    
-    //  DO THIS LATER PERCHANCE
-    // public void CreateDB()
-    // {
-    //     using (var connection = new SqliteConnection(dbName))
-    //     {
-    //         
-    //     }
-    // }
-    
     public void InitializePlayer()
     {
         using (var connection = new SqliteConnection($"URI=file:{filepath}"))
@@ -51,6 +41,50 @@ public class DBManager : MonoBehaviour
                 }
             }
             
+            connection.Close();
+        }
+    }
+
+    public int InitializeMoney()
+    {
+        int money = 0;
+        
+        using (var connection = new SqliteConnection($"URI=file:{filepath}"))
+        {
+            connection.Open();
+            
+            using (var command = connection.CreateCommand())
+            {
+                command.CommandText = "SELECT Money FROM PlayerStat";
+                
+                using (IDataReader reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        money = int.Parse(reader[0].ToString());
+                    }
+                    
+                    reader.Close();
+                }
+            }
+            
+            connection.Close();
+        }
+        
+        return money;
+    }
+
+    public void GetMoney(int amount)
+    {
+        using (var connection = new SqliteConnection($"URI=file:{filepath}"))
+        {
+            connection.Open();
+
+            using (var command = connection.CreateCommand())
+            {
+                command.CommandText = $"UPDATE PlayerStat SET Money = Money + {amount}";
+            }
+
             connection.Close();
         }
     }

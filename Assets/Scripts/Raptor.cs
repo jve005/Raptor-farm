@@ -1,7 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "New Raptor", menuName = "Raptor")]
-public class Raptor : ScriptableObject
+public class Raptor
 {
     public string Name;
     
